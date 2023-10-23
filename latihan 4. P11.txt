@@ -1,0 +1,18 @@
+def hitung_jumlah_angka_dibagi_habis(daftar_angka, pemisah):
+    total = 0
+    for angka in daftar_angka:
+        if angka % pemisah == 0:
+            total += angka
+    return total
+daftar_angka1 = [15, 20, 25, 30, 35]
+pemisah1 = 5
+hasil1 = hitung_jumlah_angka_dibagi_habis(daftar_angka1, pemisah1)
+print(f"Jumlah angka dalam {daftar_angka1} yang dapat dibagi habis oleh {pemisah1} adalah {hasil1}")
+daftar_angka2 = [9, 12, 18, 21, 24]
+pemisah2 = 3
+hasil2 = hitung_jumlah_angka_dibagi_habis(daftar_angka2, pemisah2)
+print(f"Jumlah angka dalam {daftar_angka2} yang dapat dibagi habis oleh {pemisah2} adalah {hasil2}")
+daftar_angka3 = [7, 14, 21, 28, 32]
+pemisah3 = 7
+hasil3 = hitung_jumlah_angka_dibagi_habis(daftar_angka3, pemisah3)
+print(f"Jumlah angka dalam {daftar_angka3} yang dapat dibagi habis oleh {pemisah3} adalah {hasil3}")
